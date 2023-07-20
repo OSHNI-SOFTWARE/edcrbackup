@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemMarketDot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/shaded_rect_background">
+    <bd.com.aristo.edcr.utils.ui.texts.ATextView
+        android:id="@+id/day"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="25"
+        android:textColor="@color/color2"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="@dimen/_2sdp" />
+    <View
+        android:layout_width="25dp"
+        android:layout_height=".5dp"
+        android:background="@color/light_gray"/>
+    <bd.com.aristo.edcr.utils.ui.texts.ATextView
+        android:id="@+id/dotA"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="m"
+        android:textColor="@color/color2"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="@dimen/_2sdp" />
+    <bd.com.aristo.edcr.utils.ui.texts.ATextView
+        android:id="@+id/dotB"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="e"
+        android:textColor="@color/color2"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="@dimen/_2sdp" />
+    <bd.com.aristo.edcr.utils.ui.texts.ATextView
+        android:id="@+id/dotC"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="m"
+        android:textColor="@color/color2"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="@dimen/_2sdp" />
+    <bd.com.aristo.edcr.utils.ui.texts.ATextView
+        android:id="@+id/dotD"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="0"
+        android:textColor="@color/color2"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="@dimen/_2sdp" />
+</LinearLayout>

@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llSearch"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/vertical_margin">
+        <bd.com.aristo.edcr.utils.ui.texts.AnEditText
+            android:id="@+id/etFilterDoctor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:hint="Search..." />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/doctorList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/button_round_circle_transparent"
+            android:id="@+id/flColorInfo">
+            <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Color Info"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <Button
+            android:id="@+id/btnProduct"
+            style="@style/AButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/product_related"
+            android:textSize="18sp"/>
+        <Button
+            android:layout_below="@+id/btnProduct"
+            android:id="@+id/btnGift"
+            style="@style/AButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/gift_related"
+            android:textSize="18sp"/>
+        <Button
+            android:layout_below="@+id/btnGift"
+            android:id="@+id/btnMarketStrategy"
+            style="@style/AButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/marketing_strategy"
+            android:textSize="18sp"/>
+        <Button
+            android:layout_below="@+id/btnMarketStrategy"
+            android:id="@+id/btnEmpBenefit"
+            style="@style/AButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/employee_benefit"
+            android:textSize="18sp"/>
+        <Button
+            android:layout_below="@+id/btnEmpBenefit"
+            android:id="@+id/btnSurvey"
+            style="@style/AButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/survey"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

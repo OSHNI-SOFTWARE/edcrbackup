@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_popup_layout">
+
+    <TextView
+        android:id="@+id/popupTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:text="Select one" />
+
+    <View
+        android:id="@+id/line"
+        android:background="@color/darkGray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/popupTitle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:orientation="vertical">
+
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/option_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Absent"
+            android:foreground="?android:selectableItemBackground"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:gravity="center"
+           android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/white"
+            android:padding="10dp"/>
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/option_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:foreground="?android:selectableItemBackground"
+            android:background="@color/white"
+            android:text="Not Allowed"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/option_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Missed"
+            android:textColor="@color/black"
+            android:foreground="?android:selectableItemBackground"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

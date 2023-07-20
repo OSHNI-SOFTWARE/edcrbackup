@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/llDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuesday, 23 May, 2018"
+            android:background="@color/offWhite"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/totalBill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Bill : 0.0"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/_2sdp"
+            android:textSize="20sp"
+            android:textColor="@color/color1"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llBottomBtn"
+        android:layout_below="@+id/llDate"
+        android:layout_marginBottom="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:layout_margin="@dimen/_2sdp"
+                >
+                <LinearLayout
+                    android:id="@+id/llDA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                        android:id="@+id/txtDATitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:padding="@dimen/_3sdp"
+                        android:text="DA"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/color2"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"/>
+                    <LinearLayout
+                        android:id="@+id/llMorningPlace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/_5sdp">
+
+                        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Morning Places:"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/_3sdp" />
+
+                        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                            android:id="@+id/txtMorningPlace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Morning work place"
+                            android:maxLines="2"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="@dimen/_3sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/llEveningPlace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/_5sdp">
+
+                        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Evening Places:"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/margin_left_right" />
+
+                        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                            android:id="@+id/txtEveningPlace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Evening work place"
+                            android:maxLines="2"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="@dimen/margin_left_right"
+                            android:layout_marginLeft="@dimen/_5sdp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/llNDA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/_5sdp">
+
+                        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Nature of DA :"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/margin_left_right"
+                            android:layout_weight="1" />
+
+                        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                            android:id="@+id/txtNDA"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="1/2HQ + 1/2EH"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="@dimen/margin_left_right"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_weight="1"/>
+                        <CheckBox
+                            android:id="@+id/cbHolidayWork"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Holiday Work"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:textColor="@color/color2"
+                            android:backgroundTint="@color/color2"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:orientation="horizontal">
+                        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total DA Amount"
+                            android:maxLines="1"
+                            android:textColor="@color/color2"
+                            android:textSize="18sp"
+                            android:padding="@dimen/margin_left_right"
+                            android:gravity="left"
+                            android:textStyle="bold"/>
+
+                        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                            android:id="@+id/txtDAAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.0"
+                            android:maxLines="1"
+                            android:textColor="@color/color2"
+                            android:textSize="18sp"
+                            android:padding="@dimen/margin_left_right"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:gravity="right"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:layout_margin="@dimen/_2sdp"
+                >
+                <LinearLayout
+                    android:id="@+id/llTA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                        android:id="@+id/txtTATitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TA"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:padding="@dimen/margin_left_right"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/color2"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/vertical_margin"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <bd.com.aristo.edcr.utils.ui.texts.ARadioGroup
+                            android:id="@+id/rgMileage"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:orientation="vertical">
+                            <RadioButton
+                                android:id="@+id/rbMcCity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="MC/City"
+                                android:padding="@dimen/_2sdp"
+                                android:textSize="15sp"
+                                android:textStyle="normal"
+                                android:checked="true"/>
+                            <RadioButton
+                                android:id="@+id/rbMileage"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Mileage"
+                                android:padding="@dimen/_2sdp"
+                                android:textSize="15sp"
+                                android:textStyle="normal"/>
+                        </bd.com.aristo.edcr.utils.ui.texts.ARadioGroup>
+                        <bd.com.aristo.edcr.utils.ui.texts.AnEditText
+                            android:id="@+id/etDistance"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_weight="1"
+                            android:visibility="gone"
+                            android:hint="Distance(km)"
+                            android:inputType="numberDecimal"
+                            android:layout_gravity="bottom"
+                            android:textSize="14sp"
+                            android:maxLength="6"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textColorHint="@color/black"
+                            android:background="@drawable/spinner_box"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                                android:id="@+id/txtFixedTAAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:text="0.0"
+                                android:gravity="right"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold"/>
+
+                            <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                                android:id="@+id/txtTAAmountMileage"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:text="0.0"
+                                android:gravity="right"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/vertical_margin"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:orientation="horizontal">
+                        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Total TA Amount"
+                            android:maxLines="1"
+                            android:padding="@dimen/margin_left_right"
+                            android:textSize="18sp"
+                            android:textColor="@color/green"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"/>
+                        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                            android:id="@+id/txtTotalTAAmount"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:text="0.0"
+                            android:gravity="right"
+                            android:textColor="@color/color2"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:layout_margin="@dimen/_2sdp">
+                <LinearLayout
+                    android:id="@+id/llRemarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remarks"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:padding="@dimen/margin_left_right"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/color2"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/vertical_margin"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <bd.com.aristo.edcr.utils.ui.texts.AnEditText
+                            android:id="@+id/etRemarks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/spinner_box"
+                            android:hint="Enter remarks (optional)"
+                            android:inputType="text"
+                            android:digits="@string/digits"
+                            android:maxLines="5"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/dark_gray"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Supervisor remarks: "
+                            android:textSize="@dimen/_9ssp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:gravity="center|start"
+                            android:textStyle="bold"/>
+                        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                            android:id="@+id/txtSupervisorRemark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:padding="@dimen/_5sdp"
+                            android:maxLines="5"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="@color/md_red_500"
+                            android:layout_gravity="center"
+                            android:gravity="center|start"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/llBottomBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <bd.com.aristo.edcr.utils.ui.buttons.AButton
+            android:id="@+id/send"
+            style="@style/ButtonDefault"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Upload"
+            android:layout_marginLeft="@dimen/_5sdp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

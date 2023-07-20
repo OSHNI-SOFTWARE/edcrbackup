@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        android:layout_marginRight="@dimen/margin_left_right">
+
+        <bd.com.aristo.edcr.utils.ui.texts.AnEditText
+            android:id="@+id/etFilterPlace"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:padding="10dp"
+            android:hint="@string/search"
+            android:background="@drawable/bg_text_status_saved"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvWorkPlace"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/etFilterPlace"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabSave"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            app:backgroundTint="@color/white"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:src="@drawable/ic_mini_ok"/>
+ </RelativeLayout>
+
+</LinearLayout>

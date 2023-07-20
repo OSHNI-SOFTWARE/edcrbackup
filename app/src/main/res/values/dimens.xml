@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="HomeItemMarginRight">@dimen/_10sdp</dimen>
+
+
+    <dimen name="h1">@dimen/_28sdp</dimen>
+    <dimen name="h2">@dimen/_22sdp</dimen>
+    <dimen name="h3">@dimen/_18sdp</dimen>
+    <dimen name="h4">@dimen/_14sdp</dimen>
+    <dimen name="h5">@dimen/_12sdp</dimen>
+    <dimen name="listIconWH">@dimen/_32sdp</dimen>
+    <dimen name="qty_margin">@dimen/_8sdp</dimen>
+
+    <dimen name="switchHeight">@dimen/_25sdp</dimen>
+    <dimen name="switchTrackWidth">@dimen/_200sdp</dimen>
+    <dimen name="switchThumbWidth">@dimen/_100sdp</dimen>
+
+    <dimen name="margin_left_right">@dimen/_5sdp</dimen>
+    <dimen name="progress_bar_height_width">@dimen/_50sdp</dimen>
+
+    <dimen name="iconMiniWH">@dimen/_16sdp</dimen>
+    <dimen name="vertical_margin">@dimen/_5sdp</dimen>
+
+
+    <dimen name="simpletooltip_max_width">150dp</dimen>
+    <dimen name="simpletooltip_overlay_offset">10dp</dimen>
+    <dimen name="simpletooltip_margin">10dp</dimen>
+    <dimen name="simpletooltip_padding">8dp</dimen>
+    <dimen name="simpletooltip_arrow_width">30dp</dimen>
+    <dimen name="simpletooltip_arrow_height">15dp</dimen>
+    <dimen name="simpletooltip_animation_padding">4dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="standard_55">55dp</dimen>
+    <dimen name="standard_28">28dp</dimen>
+    <dimen name="standard_105">105dp</dimen>
+    <dimen name="standard_155">155dp</dimen>
+
+</resources>

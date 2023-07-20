@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="1dp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="true"
+    android:layout_marginLeft="@dimen/margin_left_right"
+    android:layout_marginRight="@dimen/margin_left_right">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_left_right">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_dvr"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp" />
+
+        <LinearLayout
+            android:paddingLeft="@dimen/_4sdp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                style="@style/TextTitle"
+                android:textStyle="bold"
+                android:text="Abdul Karim Hawladar"
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                style="@style/TextSubTitle"
+                android:id="@+id/degree"
+                android:text="FCPS, MBBS (Rajshahi)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                    style="@style/TextTitle"
+                    android:id="@+id/special"
+                    android:text="Head neck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

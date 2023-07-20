@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "355099697093",
+    "project_id": "edcr-3f8bb",
+    "storage_bucket": "edcr-3f8bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:355099697093:android:34e8831be719c81b5ff5ac",
+        "android_client_info": {
+          "package_name": "bd.com.aristo.edcr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "355099697093-sv8f0vfaqnh4bij5a7ob3bsu5sqoibns.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDu6_Ys07HU4AlUUHxE8PmJTsN8PrRN5u0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "355099697093-sv8f0vfaqnh4bij5a7ob3bsu5sqoibns.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

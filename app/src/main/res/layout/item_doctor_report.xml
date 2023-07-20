@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="@dimen/_8sdp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="true">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_left_right">
+    <LinearLayout
+        android:id="@+id/llDoc"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:textStyle="bold"
+            android:text="Abdul Karim Hawladar"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_3sdp"
+            android:textColor="@color/color2"
+            android:textSize="16sp"/>
+
+
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/degreeSpecial"
+            android:text="FCPS, MBBS (Rajshahi) Head Neck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color4"
+            android:textStyle="bold"
+            android:padding="@dimen/_3sdp"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llLoc"
+        android:layout_below="@+id/llDoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_2sdp">
+            <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                android:id="@+id/txtMorningLoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:padding="@dimen/_2sdp"
+                android:text="M: "
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:textColor="@color/gray"
+                android:background="@color/white"
+                android:gravity="start"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_2sdp">
+            <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                android:id="@+id/txtEveningLoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:padding="@dimen/_1sdp"
+                android:text="E: "
+                android:textStyle="normal"
+                android:textSize="13sp"
+                android:textColor="@color/color2"
+                android:background="@color/white"
+                android:gravity="start"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDot"
+        android:layout_below="@+id/llLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/_5sdp"/>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

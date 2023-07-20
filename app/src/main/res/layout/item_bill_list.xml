@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/llRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="11">
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/txtDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/_2sdp"
+            android:text="01"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/green"/>
+
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/txtNDA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:padding="@dimen/_2sdp"
+            android:text="HQ,EH"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/green"/>
+
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/txtTA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="@dimen/_2sdp"
+            android:text="142.00"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/green"/>
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/txtDA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="@dimen/_2sdp"
+            android:text="220.00"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/green"/>
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/txtTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="@dimen/_2sdp"
+            android:text="1230.0"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/green"/>
+
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/txtStatus"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_weight="2.5"
+            android:text="Uploaded"
+            android:textColor="@color/color4"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/_10ssp"
+            android:ellipsize="end"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/green"/>
+</LinearLayout>

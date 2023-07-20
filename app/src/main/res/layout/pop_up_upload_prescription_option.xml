@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_popup_layout">
+
+
+    <TextView
+        style="@style/popupTitle"
+        android:id="@+id/popupTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Option" />
+
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+
+        android:layout_height="3dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/option_gallery"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gallery_128"
+            android:background="@drawable/bg_pop_up_option"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="Yes" />
+
+        <ImageButton
+
+            android:id="@+id/option_camera"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/photo_camera_128"
+            android:background="@drawable/bg_pop_up_option"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="No" />
+    </LinearLayout>
+
+</LinearLayout>

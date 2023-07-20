@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="1dp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="true"
+    android:layout_marginLeft="@dimen/margin_left_right"
+    android:layout_marginRight="@dimen/margin_left_right">
+    <bd.com.aristo.edcr.utils.ui.texts.BTextView
+        android:id="@+id/txtItemFor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Regular"
+        android:textColor="@color/blue_grey_light"
+        android:textSize="12sp"
+        android:rotation="-45"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_left_right">
+
+       <!--<ImageView
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:src="@drawable/ic_product"
+            android:layout_width="@dimen/listIconWH"
+            android:layout_height="@dimen/listIconWH"
+            android:id="@+id/itemIV"/>-->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                    style="@style/TextTitle"
+                    android:textStyle="bold"
+                    android:padding="@dimen/_3sdp"
+                    android:text="Seclo MUPS"
+                    android:id="@+id/name"
+                    android:gravity="start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                style="@style/TextTitle"
+                android:textStyle="bold"
+                android:text="[Omiprazol]"
+                android:id="@+id/generic"
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:textSize="16sp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                    android:text="Rcv Qty: 20"
+                    android:id="@+id/rctQtyTV"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/green"
+                    android:padding="@dimen/_3sdp"/>
+
+                <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                    android:text="Carry Qty: 5"
+                    android:id="@+id/carryQtyTV"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/green" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                    android:text="Exe Qty: 20"
+                    android:id="@+id/exeQtyTV"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/green"
+                    android:padding="@dimen/_3sdp"/>
+
+                <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                    android:text="Bal Qty: 5"
+                    android:id="@+id/batQtyTV"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/green" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--<ImageView
+            android:id="@+id/ivArrow"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_right"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp" />-->
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

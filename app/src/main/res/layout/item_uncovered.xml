@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemCalender"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:id="@+id/rlDate"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:background="@drawable/grid_item"
+        android:enabled="false"
+        >
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginRight="3dp"
+            android:maxLines="1"
+            android:text="25"
+            android:textColor="@color/color2"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/status"
+            android:layout_below="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginRight="3dp"
+            android:maxLines="1"
+            android:text="U"
+            android:textColor="@color/color2"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <bd.com.aristo.edcr.utils.ui.texts.ATextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:text="Upload Intern"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@color/color2"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/llInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+        <bd.com.aristo.edcr.utils.ui.texts.AnEditText
+            android:id="@+id/etInstituteName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/spinner_box"
+            android:hint="Inst. Name"
+            android:maxLength="25"
+            android:imeOptions="actionNext"
+            android:padding="@dimen/margin_left_right" />
+
+        <Spinner
+            android:id="@+id/spWardName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:entries="@array/intern"
+            android:background="@drawable/bg_spinner"
+            android:padding="@dimen/margin_left_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:orientation="horizontal">
+        <bd.com.aristo.edcr.utils.ui.buttons.AButton
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:textColor="@color/red"/>
+
+        <bd.com.aristo.edcr.utils.ui.buttons.AButton
+            android:id="@+id/btnUpload"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="Save"
+            android:background="@color/transparent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textColor="@color/color2"/>
+    </LinearLayout>
+</LinearLayout>

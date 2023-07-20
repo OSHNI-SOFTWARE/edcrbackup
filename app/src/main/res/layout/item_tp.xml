@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@color/white"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="true"
+    android:layout_margin="@dimen/_2sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:orientation="horizontal">
+
+            <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                android:id="@+id/dateTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="04"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                android:id="@+id/morningTV"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/morning"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:padding="@dimen/_3sdp"
+                android:textSize="16sp"/>
+
+            <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                android:id="@+id/eveningTV"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/evening"
+                android:gravity="right"
+                android:textColor="@color/white"
+                android:padding="@dimen/_3sdp"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/_6sdp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:padding="@dimen/_3sdp">
+                <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                    android:id="@+id/morningShiftTypeTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Working"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:padding="@dimen/_3sdp"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:textSize="12sp" />
+
+                <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                    android:id="@+id/morningContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Amtoli, Mohakhali"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:padding="@dimen/_3sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:textSize="14sp"/>
+
+                <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                    android:id="@+id/morningRT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10:30 pm"
+                    android:gravity="left"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+                <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                    android:id="@+id/morningPlaceTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RMC, DMC, KMC,SMC"
+                    android:gravity="left"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+                <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                    android:id="@+id/morningNDA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HQ"
+                    android:gravity="left"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:padding="@dimen/_3sdp">
+
+                <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                    android:id="@+id/eveningShiftTypeTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Meeting"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:padding="@dimen/_3sdp"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:textSize="12sp" />
+
+                <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                    android:id="@+id/eveningContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Amtolivc df "
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:padding="@dimen/_3sdp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+                <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                    android:id="@+id/eveningRT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10:30 pm"
+                    android:gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+                <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                    android:id="@+id/eveningPlaceListTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alsami Hospital"
+                    android:gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+                <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                    android:id="@+id/eveningNDA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NH"
+                    android:gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/txtTPChanged"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="TP Changed"
+            android:layout_gravity="center"
+            android:textColor="@color/md_red_500"
+            android:textSize="@dimen/_9ssp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

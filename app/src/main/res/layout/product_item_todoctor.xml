@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_left_right"
+    android:layout_marginRight="@dimen/margin_left_right">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_left_right">
+
+        <LinearLayout
+            android:paddingLeft="@dimen/_4sdp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                style="@style/TextTitle"
+                android:textStyle="bold"
+                android:text="Abdul Karim Hawladar"
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            style="@style/TextSubTitle"
+            android:id="@+id/countTV"
+            android:text="34"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

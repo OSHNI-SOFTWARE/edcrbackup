@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlMain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:gravity="center"
+        android:background="@color/green"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/txtDoctorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:gravity="left"
+            android:padding="@dimen/_2sdp"
+            android:text="Dr. Mohamood Abdur Rashid"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_set_place"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:textColor="#7901991f"
+        android:padding="@dimen/_5sdp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/_38sdp"
+        />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_below="@+id/llAddPlace"
+        android:id="@+id/rvPlace"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp" />
+
+    <LinearLayout
+        android:id="@+id/llAddPlace"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_below="@+id/txtTitle">
+
+        <AutoCompleteTextView
+            android:id="@+id/etPlace"
+            style="@style/InputText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@drawable/spinner_box"
+            android:hint="@string/hint_add_place"
+            android:maxLines="1"
+            android:focusableInTouchMode="true"
+            android:completionThreshold="1"
+            android:paddingStart="@dimen/margin_left_right" />
+
+        <TextView
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/add"
+            android:gravity="center"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_2sdp"
+            android:paddingRight="@dimen/_2sdp"
+            android:background="@color/green"/>
+    </LinearLayout>
+
+</RelativeLayout>

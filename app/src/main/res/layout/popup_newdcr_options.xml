@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:background="@drawable/bg_popup_layout">
+
+
+    <TextView
+        android:id="@+id/popupTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:text="Select new DCR option" />
+
+    <View
+        android:id="@+id/line"
+        android:background="@color/darkGray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/popupTitle"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp">
+
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/option_new_doc"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@color/white"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_1sdp"
+            android:text="New Doctor"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:foreground="?android:selectableItemBackground"/>
+
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/option_existing_doc"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@color/white"
+            android:layout_marginLeft="@dimen/_1sdp"
+            android:layout_marginRight="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="Existing Doctor"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:foreground="?android:selectableItemBackground"/>
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+
+            android:id="@+id/option_intern"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_60sdp"
+           android:background="@color/white"
+            android:layout_marginLeft="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:text="Intern Doctor"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:foreground="?android:selectableItemBackground"/>
+    </LinearLayout>
+
+</LinearLayout>

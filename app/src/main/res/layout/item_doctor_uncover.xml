@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="@dimen/_8sdp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="true">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_left_right">
+    <LinearLayout
+        android:id="@+id/llDoc"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:textStyle="bold"
+            android:text="Abdul Karim Hawladar"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_3sdp"
+            android:textColor="@color/color2"
+            android:textSize="16sp"/>
+
+
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/degreeSpecial"
+            android:text="FCPS, MBBS (Rajshahi) Head Neck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color4"
+            android:textStyle="bold"
+            android:padding="@dimen/_3sdp"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/address"
+            android:text="Fultola Bazar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color3"
+            android:textStyle="bold"
+            android:padding="@dimen/_3sdp"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

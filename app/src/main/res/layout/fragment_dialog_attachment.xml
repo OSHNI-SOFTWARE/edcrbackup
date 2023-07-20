@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green">
+
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Other TA"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_margin="@dimen/vertical_margin"
+        android:orientation="vertical">
+
+        <bd.com.aristo.edcr.utils.ui.imageview.TouchImageView
+            android:id="@+id/ivBillImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bill_attachment_default"
+            android:background="@color/white"
+            android:visibility="visible"
+            android:layout_margin="@dimen/_2sdp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:orientation="horizontal">
+        <bd.com.aristo.edcr.utils.ui.buttons.AButton
+            android:id="@+id/btnOk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="OK"
+            android:background="@color/transparent"
+            android:textColor="@color/green"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@color/white"
+    card_view:cardCornerRadius="1dp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="true">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5">
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            style="@style/TextTitle"
+            android:textStyle="normal"
+            android:text="1"
+            android:id="@+id/tvSerial"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_4sdp"
+            android:maxLines="1"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            />
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            style="@style/TextTitle"
+            android:textStyle="normal"
+            android:text="2017-10-01"
+            android:id="@+id/tvDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_4sdp"
+            android:maxLines="1"
+            android:gravity="center"
+            android:layout_weight="3"
+            />
+
+
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            style="@style/TextTitle"
+            android:textStyle="normal"
+            android:text="5"
+            android:id="@+id/tvCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_4sdp"
+            android:maxLines="1"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

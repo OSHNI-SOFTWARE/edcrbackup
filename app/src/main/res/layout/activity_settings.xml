@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bd.com.aristo.edcr.SettingsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="bd.com.aristo.edcr.SettingsActivity"
+        android:background="#EEEEEE">
+
+        <TextView
+            android:id="@+id/connectionInfoTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/md_red_500"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:text="@string/internet_not_available"
+            android:visibility="gone"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewRow"
+            android:layout_below="@+id/connectionInfoTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="1dp"
+            card_view:cardPreventCornerOverlap="false"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:id="@+id/userInfoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                        android:id="@+id/lblUserInfoTV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="User Info"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/_6sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="@color/white"
+                        android:background="@color/green"/>
+
+                    <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                        android:id="@+id/vInfoTV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="V 1.0"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/_6sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="@color/white"
+                        android:background="@color/green"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/userNameTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mr. Md. Mamun-Ur-Rashid [5236]"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_6sdp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ededed"
+                    android:layout_marginRight="@dimen/_6sdp"
+                    android:layout_marginLeft="@dimen/_6sdp"/>
+
+                <TextView
+                    android:id="@+id/marketTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mirpur-4(A) [O65R1E]"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_6sdp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ededed"
+                    android:layout_margin="@dimen/_6sdp"/>
+                <TextView
+                    android:id="@+id/depotTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Depot: Dhaka"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_6sdp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ededed"
+                    android:layout_margin="@dimen/_6sdp"/>
+                <TextView
+                    android:id="@+id/changePasswordTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="@string/change_password_underline"
+                    android:textColor="@color/color1"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_5sdp"/>
+
+                <TextView
+                    android:id="@+id/txtVersionStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_14ssp"
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:textColor="@color/color2"/>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewSync"
+            android:layout_below="@+id/cardViewRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="1dp"
+            card_view:cardPreventCornerOverlap="false"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            card_view:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Sync"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/_6sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="@color/white"
+                        android:background="@color/green"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="@dimen/_10sdp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/sync_basic_title"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp">
+
+                        <bd.com.aristo.edcr.utils.ui.buttons.AButton
+                            android:id="@+id/btnMasterCurrent"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAllCaps="false"
+                            android:text="Sync"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:background="@color/light_gray"
+                            android:textColor="@color/color2"
+                            android:layout_margin="@dimen/_3sdp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="@dimen/_10sdp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/sync_transaction_title"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp">
+                        <bd.com.aristo.edcr.utils.ui.buttons.AButton
+                            android:id="@+id/btnTranPrev"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAllCaps="false"
+                            android:text="January"
+                            android:layout_gravity="center"
+                            android:background="@color/light_gray"
+                            android:textColor="@color/color5"
+                            android:layout_margin="@dimen/_3sdp"/>
+                        <bd.com.aristo.edcr.utils.ui.buttons.AButton
+                            android:id="@+id/btnTranCurrent"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAllCaps="false"
+                            android:text="February"
+                            android:background="@color/light_gray"
+                            android:textColor="@color/color2"
+                            android:layout_margin="@dimen/_3sdp"/>
+                        <bd.com.aristo.edcr.utils.ui.buttons.AButton
+                            android:id="@+id/btnTranNext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAllCaps="false"
+                            android:text="March"
+                            android:background="@color/light_gray"
+                            android:textColor="@color/color4"
+                            android:layout_margin="@dimen/_3sdp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewDelete"
+            android:layout_below="@+id/cardViewSync"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="1dp"
+            card_view:cardPreventCornerOverlap="false"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            card_view:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Clear App Data"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:paddingLeft="@dimen/_6sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="@color/white"
+                        android:background="@color/red"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="@dimen/_5sdp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/delete_all_title"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:textColor="@color/red_dark2"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp">
+
+                        <bd.com.aristo.edcr.utils.ui.buttons.AButton
+                            android:id="@+id/btnDeleteAll"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAllCaps="false"
+                            android:text="Clear Data"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:background="@color/light_gray"
+                            android:textColor="@color/red"
+                            android:layout_margin="@dimen/_3sdp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</ScrollView>
+
+

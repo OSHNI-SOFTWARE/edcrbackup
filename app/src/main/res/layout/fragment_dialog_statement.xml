@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green">
+
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="left"
+            android:layout_toStartOf="@+id/closeTV"
+            android:layout_weight="0.8"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingLeft="@dimen/_6sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:text="Product Name"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:layout_marginRight="@dimen/_6sdp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/closeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/_6sdp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="Close" />
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ssList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"/>
+
+</LinearLayout>

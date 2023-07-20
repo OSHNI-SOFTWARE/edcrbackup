@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bd.com.aristo.edcr.utils.ui.texts.ATextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_view_spinner"
+    android:text="Type: TA"
+    style="@style/TextSpinner"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />

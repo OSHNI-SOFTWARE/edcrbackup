@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_logout"
+        android:title=""
+        android:icon="@drawable/ic_mini_logout"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_notification"
+        android:icon="@drawable/ic_action_notify"
+        android:title=""
+        app:actionLayout="@layout/custom_action_item_layout"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_goto_menu"
+        android:title=""
+        android:icon="@drawable/ic_main_menu"
+        app:showAsAction="always"/>
+
+</menu>

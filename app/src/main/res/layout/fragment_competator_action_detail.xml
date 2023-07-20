@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/llCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spCompany"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_weight="3"
+            android:background="@drawable/bg_spinner"
+            android:layout_margin="@dimen/_5sdp"/>
+        <bd.com.aristo.edcr.utils.ui.buttons.AButton
+            android:id="@+id/btnUpload"
+            style="@style/AButton"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/upload" />
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilCompany"
+        android:layout_below="@+id/llCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Company Name"
+        android:textColorHint="@color/gray"
+        app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+        android:visibility="visible">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCompany"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/input_border_bottom"
+            android:cursorVisible="true"
+            android:gravity="center|left|bottom"
+            android:inputType="text"
+            android:maxLength="100"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black_effective"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilGen"
+        android:layout_below="@+id/tilCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/gray"
+        app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etGen"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/input_border_bottom"
+            android:cursorVisible="true"
+            android:gravity="center|left|bottom"
+            android:inputType="text"
+            android:maxLength="100"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black_effective"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilName"
+        android:layout_below="@+id/tilGen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/gray"
+        app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etName"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/input_border_bottom"
+            android:cursorVisible="true"
+            android:gravity="center|left|bottom"
+            android:inputType="text"
+            android:maxLength="100"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black_effective"
+            android:textSize="18sp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPrice"
+        android:layout_below="@+id/tilName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/gray"
+        app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPrice"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/input_border_bottom"
+            android:cursorVisible="true"
+            android:gravity="center|left|bottom"
+            android:inputType="text"
+            android:maxLength="100"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black_effective"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilRemarks"
+        android:layout_below="@+id/tilPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/gray"
+        app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRemarks"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/input_border_bottom"
+            android:cursorVisible="true"
+            android:gravity="left"
+            android:inputType="textMultiLine"
+            android:maxLength="250"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black_effective"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/llAttachment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_5sdp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/txtTap"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Tap to Select Photos"
+            android:padding="@dimen/_2sdp"
+            android:textSize="16sp"
+            android:textColor="@color/color2"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</RelativeLayout>

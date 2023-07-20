@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="bd.com.aristo.edcr">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="bd.com.aristo.edcr.App"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name="bd.com.aristo.edcr.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="bd.com.aristo.edcr.HomeActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="bd.com.aristo.edcr.modules.reports.ReportMenuActivity"
+            android:label="Report Menu"
+            android:parentActivityName="bd.com.aristo.edcr.HostActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bd.com.aristo.edcr.HostActivity" />
+        </activity>
+
+        <activity
+            android:name="bd.com.aristo.edcr.modules.dcr.dcr.activity.DCRActivity"
+            android:label="@string/title_activity_today"
+            android:parentActivityName="bd.com.aristo.edcr.HomeActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bd.com.aristo.edcr.HomeActivity" />
+        </activity>
+        <activity
+            android:name="bd.com.aristo.edcr.modules.dcr.dcr.activity.DCRSummaryListActivity"
+            android:label="@string/title_activity_today"
+            android:parentActivityName="bd.com.aristo.edcr.modules.dcr.dcr.activity.DCRCalendarActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bd.com.aristo.edcr.modules.dcr.dcr.activity.DCRCalendarActivity" />
+        </activity>
+        <activity
+            android:name="bd.com.aristo.edcr.NotificationsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:label="Notifications"
+            />
+        <activity android:name="bd.com.aristo.edcr.modules.dcr.newdcr.existdoctors.ExistDoctorsListActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="bd.com.aristo.edcr.modules.tp.activity.TourPlanActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="bd.com.aristo.edcr.modules.tp.activity.TPListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="bd.com.aristo.edcr.modules.dcr.dcr.activity.DCRCalendarActivity"
+            android:label="@string/dcr_list"
+            android:parentActivityName="bd.com.aristo.edcr.HomeActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bd.com.aristo.edcr.HomeActivity" />
+        </activity>
+        <activity
+            android:name="bd.com.aristo.edcr.modules.dcr.dcr.activity.DCRDetailViewPagerActivity"
+            android:label="@string/dcr_list"
+            android:parentActivityName="bd.com.aristo.edcr.modules.dcr.dcr.activity.DCRCalendarActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bd.com.aristo.edcr.modules.dcr.dcr.activity.DCRCalendarActivity" />
+        </activity>
+        <activity
+            android:name="bd.com.aristo.edcr.modules.dcr.dcr.fragment.AddSampleItemActivity"
+            android:label="@string/title_activity_add_sample_item"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="bd.com.aristo.edcr.SettingsActivity"
+            android:label="@string/settings"
+            android:parentActivityName="bd.com.aristo.edcr.HomeActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bd.com.aristo.edcr.HomeActivity" />
+        </activity>
+        <activity android:name="bd.com.aristo.edcr.MainMenuActivity"
+            android:label="EDCR Menu"
+            android:parentActivityName="bd.com.aristo.edcr.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bd.com.aristo.edcr.HomeActivity" />
+        </activity>
+        <activity android:name="bd.com.aristo.edcr.ChangePasswordActivity"
+            android:label="@string/change_password"
+            android:parentActivityName="bd.com.aristo.edcr.SettingsActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bd.com.aristo.edcr.SettingsActivity" />
+        </activity>
+        <activity android:name="bd.com.aristo.edcr.modules.location.DoctorLocationActivity"
+            android:parentActivityName="bd.com.aristo.edcr.HostActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bd.com.aristo.edcr.HostActivity" />
+        </activity>
+        <activity android:name="bd.com.aristo.edcr.modules.location.LocationWiseDoctorActivity"
+            android:parentActivityName="bd.com.aristo.edcr.modules.location.DoctorLocationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bd.com.aristo.edcr.modules.location.DoctorLocationActivity" />
+        </activity>
+        <activity android:name="bd.com.aristo.edcr.modules.dcr.newdcr.fragment.AddSampleItemActivity"
+            android:label="@string/title_activity_add_sample_item"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="bd.com.aristo.edcr.HostActivity"
+            android:label="@string/title_activity_calendar"
+            android:parentActivityName="bd.com.aristo.edcr.MainMenuActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bd.com.aristo.edcr.MainMenuActivity" />
+        </activity>
+        <activity
+            android:name="bd.com.aristo.edcr.modules.reports.ReportActivity"
+            android:label="@string/title_report_fragment_doctor_list"
+            android:parentActivityName="bd.com.aristo.edcr.modules.reports.ReportMenuActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bd.com.aristo.edcr.modules.reports.ReportMenuActivity" />
+        </activity>
+        <activity
+            android:name="bd.com.aristo.edcr.modules.tp.activity.WorkPlaceActivity"
+            android:label="@string/title_tour_place"
+            android:parentActivityName="bd.com.aristo.edcr.modules.tp.activity.TourPlanActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bd.com.aristo.edcr.modules.tp.activity.TourPlanActivity" />
+        </activity>
+
+        <activity
+            android:name="bd.com.aristo.edcr.modules.dvr.fragment.DVRActivity"
+            android:label="@string/title_activity_dvr"
+            android:parentActivityName="bd.com.aristo.edcr.MainMenuActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bd.com.aristo.edcr.MainMenuActivity" />
+        </activity>
+
+        <activity
+            android:name="bd.com.aristo.edcr.modules.dvr.fragment.DVRSummaryActivity"
+            android:label="@string/title_activity_dvr"
+            android:parentActivityName="bd.com.aristo.edcr.modules.dvr.fragment.DVRActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bd.com.aristo.edcr.modules.dvr.fragment.DVRActivity" />
+        </activity>
+        <activity
+            android:name="bd.com.aristo.edcr.modules.dvr.fragment.DVRSelectionActivity"
+            android:label="@string/title_activity_dvr"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name="bd.com.aristo.edcr.modules.dvr.fragment.DVRSelectionFromSummaryActivity"
+            android:label="@string/title_activity_dvr"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name="bd.com.aristo.edcr.modules.bill.fragment.BillStatementActivity"
+            android:label="@string/title_activity_bill_statement"
+            android:parentActivityName="bd.com.aristo.edcr.MainMenuActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bd.com.aristo.edcr.MainMenuActivity" />
+        </activity>
+
+        <activity
+            android:name="bd.com.aristo.edcr.modules.dcr.accompany.AccompanyActivity"
+            android:label="Add Accompany"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+
+        <activity
+            android:name="bd.com.aristo.edcr.modules.dcr.newdcr.fragment.NewDcrSampleViewPagerActivity"
+            android:label="New DCR"
+            android:parentActivityName="bd.com.aristo.edcr.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bd.com.aristo.edcr.HomeActivity" />
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="242f73562b2ae6441476ee11653666cc3b2490f2" />
+
+       <!-- <service android:name=".fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>-->
+        <service android:name="bd.com.aristo.edcr.fcm.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name="bd.com.aristo.edcr.ProductSynJob"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true">
+        </service>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="bd.com.aristo.edcr"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+
+    </application>
+
+</manifest>

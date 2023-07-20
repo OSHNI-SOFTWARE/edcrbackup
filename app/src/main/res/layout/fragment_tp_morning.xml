@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/tpScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llCopy"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/shiftTypeSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".75"
+                    android:background="@drawable/bg_spinner"/>
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spDA"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spinner"
+                    android:layout_marginLeft="@dimen/_3sdp"/>
+                <bd.com.aristo.edcr.utils.ui.buttons.AButton
+                    android:id="@+id/btnReset"
+                    style="@style/AButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:background="@color/offWhite"
+                    android:text="Reset"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:padding="@dimen/margin_left_right"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDayType"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+                <AutoCompleteTextView
+                    android:id="@+id/etContact"
+                    style="@style/InputText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/vertical_margin"
+                    android:layout_weight="3"
+                    android:background="@drawable/spinner_box"
+                    android:hint="@string/contact_address"
+                    android:maxLines="1"
+                    android:focusableInTouchMode="true"
+                    android:completionThreshold="1"
+                    android:padding="@dimen/margin_left_right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMorning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llDayType"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <LinearLayout
+                    android:id="@+id/timeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/vertical_margin"
+                    android:orientation="horizontal">
+
+                    <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                        android:id="@+id/txtReportingTime"
+                        style="@style/TextSpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/margin_left_right"
+                        android:text="R. Time: " />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spReportHour"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/bg_spinner"/>
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spReportMinute"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_left_right"
+                        android:layout_weight="2"
+                        android:background="@drawable/bg_spinner" />
+                    <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                        android:id="@+id/amPm"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="AM"
+                        android:gravity="center|left"
+                        android:background="@color/white"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+             <!--   <bd.com.squareit.edcr.utils.ui.texts.TimePickerText
+                    android:id="@+id/txtTimePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:padding="@dimen/_3sdp"
+                    android:textSize="18sp"
+                    android:textColor="@color/color2"/>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvWorkPlace"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible"/>
+            </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+  <!--  <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/_5sdp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:color/transparent"
+            app:backgroundTint="@color/color2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/add_tour_place"
+            android:textColor="@android:color/white"
+            android:elevation="@dimen/_5sdp"
+            android:textSize="12sp"/>
+    </FrameLayout>-->
+    <LinearLayout
+        android:id="@+id/llFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/llAddPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mini_location"
+                app:layout_anchorGravity="bottom"/>
+
+            <TextView
+                android:id="@+id/productPageCount"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@color/color2"
+                android:text="Places"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                app:layout_anchor="@id/llAddPlace"
+                app:layout_anchorGravity="right|center"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:paddingLeft="@dimen/_30sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:gravity="center"
+                />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

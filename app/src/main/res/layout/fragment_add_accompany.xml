@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/vertical_margin">
+
+        <bd.com.aristo.edcr.utils.ui.texts.AnEditText
+            android:id="@+id/editTextMPOCode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:paddingLeft="@dimen/_5sdp"
+            android:hint="Type ID or Name here"
+            android:background="@drawable/aspinner_background" />
+
+        <bd.com.aristo.edcr.utils.ui.texts.ATextView
+            android:id="@+id/btnAddAccompany"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/add_accompany_hint"
+            android:gravity="center"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_2sdp"
+            android:paddingRight="@dimen/_2sdp"
+            android:background="@color/green"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAccompany"
+        android:layout_below="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <bd.com.aristo.edcr.utils.ui.buttons.AButton
+        android:id="@+id/btnDone"
+        style="@style/AButton"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/done" />
+
+</RelativeLayout>

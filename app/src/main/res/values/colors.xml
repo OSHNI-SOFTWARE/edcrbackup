@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#2196F3</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color>
+    <color name="offWhite">#9b9b9b</color>
+    <color name="lightGray">#cecece</color>
+    <color name="darkGray">#969696</color>
+
+    <color name="black">#000000</color>
+
+    <color name="color1">#FF4747</color>
+    <color name="color2">#01991f</color>
+    <color name="color3">#08415c</color>
+    <color name="color4">#FF9E02</color>
+    <color name="color4_light">#99FFD899</color>
+    <color name="color5">#6C00AA</color>
+    <color name="color6">#f2fff5</color>
+    <color name="mcolor_start">#0A0F12</color>
+    <color name="mcolor_end">#48385F</color>
+    <color name="morning">#99CCCC</color>
+    <color name="evening">#bea9de</color>
+    <color name="skyBlue">#C0C0C0</color>
+
+    <color name="color2_transparent">#9901991f</color>
+    <color name="color4_transparent">#99FF9E02</color>
+
+
+    <!--<string-array name="menuColors">
+        <item>#FF4747</item>
+        <item>#01991f</item>
+        <item>#08415c</item>
+    </string-array>-->
+
+    <string-array name="menuColors">
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+    </string-array>
+
+
+    <!--Design colors-->
+    <color name="red_dark">#F06423</color>
+    <color name="red_dark2">#D85A1B</color>
+    <color name="cyan_light">#c9ebee</color>
+    <color name="cyan">#b5e3e7</color>
+    <color name="cyan_dark">#70BDC6</color>
+    <color name="navy_blue">#214258</color>
+    <color name="navy_blue_dark">#1C3A4E</color>
+    <color name="light_green">#78DC96</color>
+    <color name="light_blue">#55C8F0</color>
+    <color name="blue">#09B1FA</color>
+    <color name="blue_light">#8009B1FA</color>
+    <color name="blue_black_dark">#13171d</color>
+    <color name="blue_black_light">#516179</color>
+    <color name="blue_grey_light">#A5B4C8</color>
+    <color name="orange">#FFA500</color>
+    <color name="yellow">#fff44f</color>
+    <color name="gray">#7e7e7e</color>
+    <color name="light_gray">#dbdbdb</color>
+    <color name="light_gray_menu">#F4F4F4</color>
+    <color name="semi_gray">#979797</color>
+    <color name="dark_gray">#696969</color>
+    <color name="bg_color">#f7f7f7</color>
+    <color name="black_effective">#2a2a2a</color>
+    <color name="shadow">#d0d8dc</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent_white">#88ffffff</color>
+
+    <color name="semi_blue">#1A55C8F0</color>
+    <color name="simpletooltip_background">@color/colorAccent</color>
+    <color name="simpletooltip_text">@android:color/primary_text_light</color>
+    <color name="simpletooltip_arrow">@color/colorAccent</color>
+    <color name="bg_home">#EFEFEF</color>
+    <color name="colorWhiteLime">#FDF9FE</color>
+
+
+</resources>

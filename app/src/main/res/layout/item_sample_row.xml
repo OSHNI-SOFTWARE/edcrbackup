@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="1dp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="true"
+    android:layout_marginLeft="@dimen/margin_left_right"
+    android:layout_marginRight="@dimen/margin_left_right">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_left_right">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:src="@drawable/ic_product"
+            android:layout_width="@dimen/listIconWH"
+            android:layout_height="@dimen/listIconWH" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_60sdp"
+            android:weightSum="3"
+            android:gravity="center|left"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.7"
+                android:orientation="horizontal">
+                <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                    style="@style/TextTitle"
+                    android:textStyle="bold"
+                    android:text="Seclo Mups"
+                    android:id="@+id/name"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/_16sdp"/>
+
+                <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                    style="@style/TextTitle"
+                    android:textStyle="bold"
+                    android:text=" [Omiprazol]"
+                    android:id="@+id/generic"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/_16sdp"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+                <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                    android:text="Rcv qty: 20"
+                    android:id="@+id/allotted"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/green"/>
+
+                <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                    android:text="Plan qty: 5"
+                    android:id="@+id/planed"
+                    android:layout_toRightOf="@+id/allotted"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/red"
+                    android:layout_marginLeft="@dimen/_10sdp"/>
+
+                <bd.com.aristo.edcr.utils.ui.texts.ATextView
+                    android:text="Bal qty: 5"
+                    android:id="@+id/balQtyTV"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemCalender"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    card:cardElevation="10dp"
+    card:cardCornerRadius="4dp"
+    card:cardBackgroundColor="@color/light_gray"
+    card:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:id="@+id/llDate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/grid_item"
+        android:enabled="false"
+        >
+        <ImageView
+            android:id="@+id/ivNews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/im_back_app_selection"/>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
